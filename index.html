@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Authentication is Fun</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: rgb(255, 254, 223);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="authForm">
+      <h2>Sign Up or Sign In</h2>
+      <input type="email" placeholder="email" id="userEmail" />
+      <input type="password" placeholder="password" id="userPassword" />
+      <br /><br />
+      <button id="signUpButton">Sign Up</button>
+      <button id="signInButton">Sign In</button>
+    </div>
+
+    <div id="secretContent">
+      <h2>Products Page</h2>
+     
+  <!--Header-->
+
+    <!--Section Description-->
+    <div class="container mt-5">
+        <strong>
+            <p class="text-center text-bg-warning text-wrap text-light">COLLECTION</p>
+        </strong>
+    </div>
+
+    <!--Columns-->
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col">
+                <img src="images/mah-bag-white.jpg" class="rounded" height="200px" width="200px" alt="mah-bag-white">
+                <p class="text-center mt-3 text-black-50"><strong>MAH "White" Backpack | 14 Inch</strong></p>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                    data-bs-target="#myModal"><strong> See More</strong>
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">MAH 2141 Young Backpack with PU Leather Fabric | 14 Inch</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Brand：MAH
+
+                                Material：PU Leather
+
+                                Pattern：Solid color
+
+                                Condition：New
+
+                                With or without interlayer: Yes
+
+                                Shoulder strap style: Double
+
+                                Computer size: 14 Inches
+
+                                Size: Length 29 * Width 12 * Height 38CM
+
+                                Color：Pink/Grey/Green
+
+                                Occation: Leisure/Work/School/Travel
+
+                                Application object: Youth
+
+                                Bag hardness: Soft
+
+                                Waterproof degree: Waterproof
+
+                                Model：MR21B2141B
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning text-light"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/mah-bag-pink.jpg" class="rounded" height="200px" width="200px" alt="mah-bag-pink">
+                <p class="text-center mt-3 text-black-50"><strong>MAH "Pink" Backpack | 14 Inch</strong></p>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                    data-bs-target="#myModal"><strong> See More</strong>
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">MAH 2141 Young Backpack with PU Leather Fabric | 14 Inch</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Brand：MAH
+
+                                Material：PU Leather
+
+                                Pattern：Solid color
+
+                                Condition：New
+
+                                With or without interlayer: Yes
+
+                                Shoulder strap style: Double
+
+                                Computer size: 14 Inches
+
+                                Size: Length 29 * Width 12 * Height 38CM
+
+                                Color：Pink/Grey/Green
+
+                                Occation: Leisure/Work/School/Travel
+
+                                Application object: Youth
+
+                                Bag hardness: Soft
+
+                                Waterproof degree: Waterproof
+
+                                Model：MR21B2141B
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning text-light"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/mah-bag-green.jpg" class="rounded" height="200px" width="200px" alt="mah-bag-green">
+                <p class="text-center mt-3 text-black-50"><strong>MAH "Green" Backpack | 14 Inch</strong></p>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                    data-bs-target="#myModal"><strong> See More</strong>
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">MAH 2141 Young Backpack with PU Leather Fabric | 14 Inch</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Brand：MAH
+
+                                Material：PU Leather
+
+                                Pattern：Solid color
+
+                                Condition：New
+
+                                With or without interlayer: Yes
+
+                                Shoulder strap style: Double
+
+                                Computer size: 14 Inches
+
+                                Size: Length 29 * Width 12 * Height 38CM
+
+                                Color：Pink/Grey/Green
+
+                                Occation: Leisure/Work/School/Travel
+
+                                Application object: Youth
+
+                                Bag hardness: Soft
+
+                                Waterproof degree: Waterproof
+
+                                Model：MR21B2141B
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning text-light"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center mt-5">
+        <div class="row align-items-start">
+            <div class="col">
+                <img src="images/mah-bag-yellow.jpg" class="rounded" height="200px" width="200px" alt="mah-bag-yellow">
+                <p class="text-center mt-3 text-black-50"><strong>MAH "Yellow" Backpack | 14 Inch</strong></p>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                    data-bs-target="#myModal"><strong> See More</strong>
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">MAH 2141 Young Backpack with PU Leather Fabric | 14 Inch</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Brand：MAH
+
+                                Material：PU Leather
+
+                                Pattern：Solid color
+
+                                Condition：New
+
+                                With or without interlayer: Yes
+
+                                Shoulder strap style: Double
+
+                                Computer size: 14 Inches
+
+                                Size: Length 29 * Width 12 * Height 38CM
+
+                                Color：Pink/Grey/Green
+
+                                Occation: Leisure/Work/School/Travel
+
+                                Application object: Youth
+
+                                Bag hardness: Soft
+
+                                Waterproof degree: Waterproof
+
+                                Model：MR21B2141B
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning text-light"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/mah-bag-black.jpg" class="rounded" height="200px" width="200px" alt="mah-bag-black">
+                <p class="text-center mt-3 text-black-50"><strong>MAH "Black" Backpack | 14 Inch</strong></p>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                    data-bs-target="#myModal"><strong> See More</strong>
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">MAH 2141 Young Backpack with PU Leather Fabric | 14 Inch</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Brand：MAH
+
+                                Material：PU Leather
+
+                                Pattern：Solid color
+
+                                Condition：New
+
+                                With or without interlayer: Yes
+
+                                Shoulder strap style: Double
+
+                                Computer size: 14 Inches
+
+                                Size: Length 29 * Width 12 * Height 38CM
+
+                                Color：Pink/Grey/Green
+
+                                Occation: Leisure/Work/School/Travel
+
+                                Application object: Youth
+
+                                Bag hardness: Soft
+
+                                Waterproof degree: Waterproof
+
+                                Model：MR21B2141B
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning text-light"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/mah-bag-orange.jpg" class="rounded" height="200px" width="200px" alt="mah-bag-orange">
+                <p class="text-center mt-3 text-black-50"><strong>MAH "Orange" Backpack | 14 Inch</strong></p>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                    data-bs-target="#myModal"><strong> See More</strong>
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">MAH 2141 Young Backpack with PU Leather Fabric | 14 Inch</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Brand：MAH
+
+                                Material：PU Leather
+
+                                Pattern：Solid color
+
+                                Condition：New
+
+                                With or without interlayer: Yes
+
+                                Shoulder strap style: Double
+
+                                Computer size: 14 Inches
+
+                                Size: Length 29 * Width 12 * Height 38CM
+
+                                Color：Pink/Grey/Green
+
+                                Occation: Leisure/Work/School/Travel
+
+                                Application object: Youth
+
+                                Bag hardness: Soft
+
+                                Waterproof degree: Waterproof
+
+                                Model：MR21B2141B
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning text-light"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center mt-5">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <img src="images/mah-bag-2-green.jpg" class="rounded" height="200px" width="200px"
+                            alt="mah-bag-yellow">
+                        <p class="text-center mt-3 text-black-50"><strong>MAH "Green" Siro Backpack | 14 Inch</strong>
+                        </p>
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                            data-bs-target="#myModal"><strong> See More</strong>
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">MAH 2329 Siro Backpack with Waterproof Fabric Cactus
+                                            Green | 14 inch
+                                        </h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        Brand：MAH
+
+                                        Material：Polyester
+
+                                        Pattern：Solid color
+
+                                        Condition：New
+
+                                        With or without interlayer: Yes
+
+                                        Shoulder strap style: Double
+
+                                        Computer size: 14 Inches
+
+                                        Size: Length 26.5 * Width 11 * Height 37CM（14 inch）
+
+                                        Weight: 0.61kg
+
+                                        Launch time: Spring
+
+                                        Occation: School
+
+                                        Application object: Youth
+
+                                        Bag hardness: Soft
+
+                                        Waterproof degree: Waterproof
+
+                                        Model:M21D2329B01
+
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning text-light"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/mah-bag-2-offwhite.jpg" class="rounded" height="200px" width="200px"
+                            alt="mah-bag-snowwhite">
+                        <p class="text-center mt-3 text-black-50"><strong>MAH "Snow White" Siro Backpack | 14
+                                Inch</strong>
+                        </p>
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                            data-bs-target="#myModal"><strong> See More</strong>
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">MAH Siro Backpack School bag snow white waterproof
+                                            backpack 14 inch laptop
+                                        </h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        Brand：MAH
+
+                                        Material：Polyester
+
+                                        Pattern：Solid color
+
+                                        Condition：New
+
+                                        With or without interlayer: Yes
+
+                                        Shoulder strap style: Double
+
+                                        Computer size: 14 Inches
+
+                                        Size: Length 26.5 * Width 11 * Height 37CM（14 inch）
+
+                                        Weight: 0.61kg
+
+                                        Launch time: Spring
+
+                                        Occation: School
+
+                                        Application object: Youth
+
+                                        Bag hardness: Soft
+
+                                        Waterproof degree: Waterproof
+
+                                        Model:M21D2329B01
+
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning text-light"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/mah-bag-2-yelloworange.jpg" class="rounded" height="200px" width="200px"
+                            alt="mah-bag-yelloworange">
+                        <p class="text-center mt-3 text-black-50"><strong>MAH "Snow White" Siro Backpack | 14
+                                Inch</strong>
+                        </p>
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-warning text-light" data-bs-toggle="modal"
+                            data-bs-target="#myModal"><strong> See More</strong>
+                        </button>
+
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">MAH Siro Backpack School bag snow white waterproof
+                                            backpack 14 inch laptop
+                                        </h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        Brand：MAH
+
+                                        Material：Polyester
+
+                                        Pattern：Solid color
+
+                                        Condition：New
+
+                                        With or without interlayer: Yes
+
+                                        Shoulder strap style: Double
+
+                                        Computer size: 14 Inches
+
+                                        Size: Length 26.5 * Width 11 * Height 37CM（14 inch）
+
+                                        Weight: 0.61kg
+
+                                        Launch time: Spring
+
+                                        Occation: School
+
+                                        Application object: Youth
+
+                                        Bag hardness: Soft
+
+                                        Waterproof degree: Waterproof
+
+                                        Model:M21D2329B01
+
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning text-light"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--footer-->
+                    <footer>
+                        <p class="mt-5"></p>
+                    </footer>
+</body>
+
+
+      <button id="signOutButton">Sign Out</button>
+    </div>
+
+    <script type="module">
+      //Update the below URL with the appropriate version if necessary.
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        onAuthStateChanged,
+        signOut,
+        //Update the below URL with the appropriate version if necessary.
+      } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+      // INSERT YOUR FIREBASE CONFIG OBJECT HERE
+      const firebaseConfig = {
+    apiKey: "AIzaSyBf2Tsj9P31GIi26VIWydNlps8CBPliAN4",
+    authDomain: "authentication-da0b3.firebaseapp.com",
+    projectId: "authentication-da0b3",
+    storageBucket: "authentication-da0b3.appspot.com",
+    messagingSenderId: "535194015413",
+    appId: "1:535194015413:web:deeb0fed25f139455350fc"
+  };
+
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+
+      const userEmail = document.querySelector("#userEmail");
+      const userPassword = document.querySelector("#userPassword");
+      const authForm = document.querySelector("#authForm");
+      const secretContent = document.querySelector("#secretContent");
+      const signUpButton = document.querySelector("#signUpButton");
+      const signInButton = document.querySelector("#signInButton");
+      const signOutButton = document.querySelector("#signOutButton");
+
+      secretContent.style.display = "none";
+
+      const userSignUp = async () => {
+        const signUpEmail = userEmail.value;
+        const signUpPassword = userPassword.value;
+        createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user);
+            Swal.fire("Your Account is succesfully created!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const userSignIn = async () => {
+        const signInEmail = userEmail.value;
+        const signInPassword = userPassword.value;
+        signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            Swal.fire("You have signed in successfully!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const checkAuthState = async () => {
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            authForm.style.display = "none";
+            secretContent.style.display = "block";
+          } else {
+            authForm.style.display = "block";
+            secretContent.style.display = "none";
+          }
+        });
+      };
+
+      const userSignOut = async () => {
+        await signOut(auth);
+        Swal.fire("User Logout");
+      };
+
+      checkAuthState();
+
+      signUpButton.addEventListener("click", userSignUp);
+      signInButton.addEventListener("click", userSignIn);
+      signOutButton.addEventListener("click", userSignOut);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
